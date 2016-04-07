@@ -759,6 +759,15 @@
         "icon-image"
       ]
     },
+    "text-unique": {
+      "type": "boolean",
+      "function": "piecewise-constant",
+      "default": false,
+      "doc": "If true, distinct text for each layer will appear at most once per tile.",
+      "requires": [
+        "text-field"
+      ]
+    },
     "visibility": {
       "type": "enum",
       "function": "piecewise-constant",
