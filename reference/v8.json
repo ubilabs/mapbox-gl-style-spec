@@ -438,6 +438,16 @@
       "default": false,
       "doc": "If true, the symbols will not cross tile edges to avoid mutual collisions. Recommended in layers that don't have enough padding in the vector tile to prevent collisions, or if it is a point symbol layer placed after a line symbol layer."
     },
+    "symbol-mode": {
+      "type": "enum",
+      "function": "piecewise-constant",
+      "values": [
+          "interactive",
+          "guidance"
+      ],
+      "default": "map",
+      "doc": "Label placement mode. `guidance` alters placement strategy to fit map displays with guided movement."
+    },
     "icon-allow-overlap": {
       "type": "boolean",
       "function": "piecewise-constant",
