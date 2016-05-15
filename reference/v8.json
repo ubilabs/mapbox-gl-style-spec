@@ -759,6 +759,30 @@
         "icon-image"
       ]
     },
+    "text-box": {
+      "type": "boolean",
+      "function": "piecewise-constant",
+      "default": false,
+      "doc": "If true, display a background shape behind text.",
+      "requires": [
+        "text-field"
+      ]
+    },
+    "text-box-padding": {
+      "type": "array",
+      "doc": "Width and height of padding to apply to a text box.",
+      "value": "number",
+      "units": "ems",
+      "function": "interpolated",
+      "length": 2,
+      "default": [
+        0,
+        0
+      ],
+      "requires": [
+        "text-box"
+      ]
+    },
     "visibility": {
       "type": "enum",
       "function": "piecewise-constant",
@@ -1251,6 +1275,16 @@
       "doc": "The halo's fadeout distance towards the outside.",
       "requires": [
         "text-field"
+      ]
+    },
+    "text-box-color": {
+      "type": "color",
+      "default": "#000000",
+      "doc": "The color of the text box.",
+      "function": "interpolated",
+      "transition": true,
+      "requires": [
+        "text-box"
       ]
     },
     "text-translate": {
