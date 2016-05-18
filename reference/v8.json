@@ -409,6 +409,12 @@
     }
   },
   "layout_symbol": {
+    "alpha-mask": {
+      "type": "boolean",
+      "function": "piecewise-constant",
+      "default": false,
+      "doc": "If true, apply a viewport-level alpha mask to the layer. @TODO switch to a sprite image id for specifying an alpha texture."
+    },
     "symbol-placement": {
       "type": "enum",
       "function": "piecewise-constant",
