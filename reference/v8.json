@@ -254,6 +254,7 @@
         "symbol",
         "circle",
         "raster",
+        "data-driven-raster",
         "background"
       ],
       "doc": "Rendering type of this layer."
@@ -2161,7 +2162,128 @@
     "raster-saturation": {
       "type": "number",
       "doc": "Increase or reduce the saturation of the image.",
+      "default": 0.5,
+      "minimum": -1,
+      "maximum": 1,
+      "function": "interpolated",
+      "zoom-function": true,
+      "transition": true,
+      "sdk-support": {
+        "basic": {
+          "js": "0.10.0",
+          "ios": "2.0.0",
+          "android": "2.0.1"
+        }
+      }
+    },
+    "raster-contrast": {
+      "type": "number",
+      "doc": "Increase or reduce the contrast of the image.",
       "default": 0,
+      "minimum": -1,
+      "maximum": 1,
+      "function": "interpolated",
+      "zoom-function": true,
+      "transition": true,
+      "sdk-support": {
+        "basic": {
+          "js": "0.10.0",
+          "ios": "2.0.0",
+          "android": "2.0.1"
+        }
+      }
+    },
+    "raster-fade-duration": {
+      "type": "number",
+      "default": 300,
+      "minimum": 0,
+      "function": "interpolated",
+      "zoom-function": true,
+      "transition": true,
+      "units": "milliseconds",
+      "doc": "Fade duration when a new tile is added.",
+      "sdk-support": {
+        "basic": {
+          "js": "0.10.0",
+          "ios": "2.0.0",
+          "android": "2.0.1"
+        }
+      }
+    }
+  },
+  "paint_data-driven-raster": {
+    "raster-opacity": {
+      "type": "number",
+      "doc": "The opacity at which the image will be drawn.",
+      "default": 1,
+      "minimum": 0,
+      "maximum": 1,
+      "function": "interpolated",
+      "zoom-function": true,
+      "transition": true,
+      "sdk-support": {
+        "basic": {
+          "js": "0.10.0",
+          "ios": "2.0.0",
+          "android": "2.0.1"
+        }
+      }
+    },
+    "raster-hue-rotate": {
+      "type": "number",
+      "default": 0,
+      "period": 360,
+      "function": "interpolated",
+      "zoom-function": true,
+      "transition": true,
+      "units": "degrees",
+      "doc": "Rotates hues around the color wheel.",
+      "sdk-support": {
+        "basic": {
+          "js": "0.10.0",
+          "ios": "2.0.0",
+          "android": "2.0.1"
+        }
+      }
+    },
+    "raster-brightness-min": {
+      "type": "number",
+      "function": "interpolated",
+      "zoom-function": true,
+      "doc": "Increase or reduce the brightness of the image. The value is the minimum brightness.",
+      "default": 0,
+      "minimum": 0,
+      "maximum": 1,
+      "transition": true,
+      "sdk-support": {
+        "basic": {
+          "js": "0.10.0",
+          "ios": "2.0.0",
+          "android": "2.0.1"
+        }
+      }
+    },
+    "raster-brightness-max": {
+      "type": "number",
+      "function": "interpolated",
+      "zoom-function": true,
+      "doc": "Increase or reduce the brightness of the image. The value is the maximum brightness.",
+      "default": 1,
+      "minimum": 0,
+      "maximum": 1,
+      "transition": true,
+      "sdk-support": {
+        "basic": {
+          "js": "0.10.0",
+          "ios": "2.0.0",
+          "android": "2.0.1"
+        }
+      }
+    },
+    "raster-saturation": {
+      "type": "number",
+      "doc": "Increase or reduce the saturation of the image.",
+      "default": 0.5,
       "minimum": -1,
       "maximum": 1,
       "function": "interpolated",
