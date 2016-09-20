@@ -18,3 +18,5 @@ exports.ParsingError = require('./lib/error/parsing_error');
 exports.validate = require('./lib/validate_style');
 exports.validate.parsed = require('./lib/validate_style');
 exports.validate.latest = require('./lib/validate_style');
+
+exports.validateMin = require('./lib/validate_style.min');
