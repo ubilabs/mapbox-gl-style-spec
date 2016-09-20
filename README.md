@@ -1,3 +1,8 @@
+# Ubilabs
+
+- Keep the branch `mb-pages` in sync with the corresponding mapbox branch (mapbox/mb-pages). It will be used to pull in updates.
+- Merge the pulled in updates (`mb-pages` branch) into branch `interactivemap`. It contains the changes for the InteractiveMap module.
+
 # Mapbox GL Spec & Lint
 
 [![Circle CI](https://circleci.com/gh/mapbox/mapbox-gl-style-spec.svg?style=svg)](https://circleci.com/gh/mapbox/mapbox-gl-style-spec)
